@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="eel.js"></script>
+        <script>
+            function addText(text) {
+                var div = document.getElementById("content");
+                div.innerHTML += "<br>" + text;
+            }
+            eel.expose(addText);
+        </script>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <p>Text will appear here:</p>
+        <div id="content"></div>
+    </body>
+</html>
